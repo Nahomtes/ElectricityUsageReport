@@ -12,6 +12,8 @@ public class ElectricityUsageReport {
         System.out.println("Enter electricity used this month: ");
         double electricityUsage = scanner.nextDouble();
         double over200HoursBill = 0.0;
+	
+	scanner.close();
 
         if (electricityUsage > 200) {
             double over200Hours = electricityUsage - 200;
