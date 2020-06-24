@@ -28,7 +28,7 @@ pseudocode:
             over200HoursBill = over200Hours * 8
         ENDIF
          
-        eletricityBill = (200 * 8) + over200HoursBill
+        eletricityBill = (200 * 11) + over200HoursBill
         
         Display: "customerName with customerNumber customer number has used electricityUsage. Total eletricity bill: eletricityBill"
-    END
+    END# ElectricityUsageReport

@@ -13,13 +13,13 @@ public class ElectricityUsageReport {
         double electricityUsage = scanner.nextDouble();
         double over200HoursBill = 0.0;
 	
-	scanner.close();
+	    scanner.close();
 
         if (electricityUsage > 200) {
             double over200Hours = electricityUsage - 200;
             over200HoursBill = over200Hours * 8;
         }
-        double electricityBill = (200 * 8) + over200HoursBill;
+        double electricityBill = (200 * 11) + over200HoursBill;
 
         System.out.printf("%s with (%d) customer number has used (%.2f) kilowatt. Total electricity bill is: "
                         + NumberFormat.getCurrencyInstance().format(electricityBill) ,
